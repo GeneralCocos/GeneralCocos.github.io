@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+<meta charset="UTF-8">
+<title>Поиск</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .body {
+        position: relative; 
+        width: 100%;
+        height: 100%;
+        background-image: url("photo/flag.jpg");
+        background-size: cover;
+    }
+    
+    .body::before {
+        content: ""; 
+        position: absolute; 
+        top: 56px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    
+    .btn {
+        background-color: #bdc7ff;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center; 
+    }
+    .header {
+        background-color: rgba(0, 0, 0, 0.7); 
+    }
+</style>
+</head>
+<header class="header">
+<a href="index.html" class="logo">
+    <img src="photo\home.png" alt="home">
+</a>
+<nav class="nav">
+    <a href="vhod.html" class="nav-item">Вход</a>
+    <a href="reg.html" class="nav-item">Регистрация</a>
+    <a href="search.html" class="nav-item">Поиск</a>
+</header>
+
+
+
+<body class="body">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <!-- Форма для поиска-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Поиск в различных поисковых системах</h5>
+                        <form action="https://www.yandex.ru/search/" method="GET" target="_blank" class="mb-3">
+                            <div class="form-group">
+                                <label for="yandex_query">Yandex:</label>
+                                <input type="text" id="yandex_query" name="text" placeholder="Поиск в Yandex" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Искать</button>
+                        </form>
+                        <form action="https://www.google.com/search" method="GET" target="_blank" class="mb-3">
+                            <div class="form-group">
+                                <label for="google_query">Google:</label>
+                                <input type="text" id="google_query" name="q" placeholder="Поиск в Google" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Искать</button>
+                        </form>
+                        
+                        <form action="https://search.yahoo.com/search" method="GET" target="_blank" class="mb-3">
+                            <div class="form-group">
+                                <label for="yahoo_query">Yahoo:</label>
+                                <input type="text" id="yahoo_query" name="p" placeholder="Поиск на Yahoo" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Искать</button>
+                        </form>
+                        <form action="https://www.youtube.com/results" method="GET" target="_blank" class="mb-3">
+                            <div class="form-group">
+                                <label for="youtube_query">YouTube:</label>
+                                <input type="text" id="youtube_query" name="search_query" placeholder="Поиск на YouTube" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Искать</button>
+                        </form>                        
+                    
+                </div>
+                <!-- Форма для фильтрации -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Фильтрация результатов</h5>
+                        <form class="mb-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Введите запрос">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option selected disabled>Выберите категорию</option>
+                                    <option>Бакалея</option>
+                                    <option>Напитки</option>
+                                    <option>Одежда</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="priceRange">Фильтр по цене:</label>
+                                <input type="range" class="form-control-range" id="priceRange" min="0" max="1000" step="10">
+                            </div>
+                            <button type="button" class="btn btn-lg btn-block btn-info" onclick="redirectToKabinet()">Вход</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
