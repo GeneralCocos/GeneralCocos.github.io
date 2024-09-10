@@ -1,0 +1,22 @@
+.card__header{
+    width: max-content;
+}
+
+.card__backlog{
+    background-color: var(--color-text-ligth-gray);
+    color: var(--color-text-gray);
+}
+
+.card__process{
+    background-color: var(--color-text-ligth-blue);
+    color: var(--color-text-blue);
+}
+.card__ready{
+    background-color: var(--color-text-ligth-green);
+    color: var(--color-text-green);
+}
+.card__trash{
+    background-color: var(--color-text-ligth-red);
+    color: var(--color-text-red);
+}
+

@@ -1,0 +1,27 @@
+.card{
+    border-radius: var(--border-10);
+    background-color: var(--color-text);
+    padding: 15px 10px;
+    width: 300px;
+
+}
+
+.card__border__backlog{
+    border-left: solid var(--color-text-gray);
+    border-radius: var(--border-6);
+}
+
+.card__border__process{
+    border-left: solid var(--color-text-blue);
+    border-radius: var(--border-6);
+}
+
+.card__border__ready{
+    border-left: solid var(--color-text-green);
+    border-radius: var(--border-6);
+}
+
+.card__border__trash{
+    border-left: solid var(--color-text-red);
+    border-radius: var(--border-6);
+}

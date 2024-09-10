@@ -1,0 +1,11 @@
+.card__delete{
+    background-color: var(--color-text-red);
+    text-align: center;
+    color: var(--color-text);
+}
+
+.delete{
+    display:flex;
+    justify-content: end;
+    margin: 15px 50px;
+}

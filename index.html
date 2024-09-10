@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/add-task.css">
+    <link rel="stylesheet" href="styles/task.css">
+    <link rel="stylesheet" href="styles/field-task.css">
+    <link rel="stylesheet" href="styles/delete.css">
+    <title>To-do list</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <p class="header__title">Список задач</p>
+        </div>
+    </header>
+    <section class="section">
+        <div class="new-task">
+            <div>
+                <h2>Новая Задача</h2>
+            </div>
+            <div class="new-task__buttons">
+                <h1 class="input_field">Название задачи...</h1>
+                <h1 class="button">+ Добавить</h1>
+            </div>
+        </div>
+    </section>
+    <section class="section section__second">
+        <div class="cell">
+            <div class="card card__header card__backlog"><h1>Бэклог</h1></div>
+            <div class="card card__border__backlog"><h1>Выучить JS</h1></div>
+            <div class="card card__border__backlog"><h1>Выучить React</h1></div>
+            <div class="card card__border__backlog"><h1>Сделать домашку</h1></div>
+        </div>
+        <div class="cell">
+            <div class="card card__header card__process"><h1>В процессе</h1></div>
+            <div class="card card__border__process"><h1>Выпить смузи</h1></div>
+            <div class="card card__border__process"><h1>Попить воды</h1></div>
+        </div>
+        <div class="cell">
+            <div class="card card__header card__ready"><h1>Готово</h1></div>
+            <div class="card card__border__ready"><h1>Позвонить маме</h1></div>
+            <div class="card card__border__ready"><h1>Погладить кота</h1></div>
+        </div>
+        <div class="cell">
+            <div class="card card__header card__trash"><h1>Корзина</h1></div>
+            <div class="card card__border__trash"><h1>Сходить погулять</h1></div>
+            <div class="card card__border__trash"><h1>Прочитать Войну и Мир</h1></div>
+        </div>
+    </section>
+    <div class="delete">
+        <div class="card card__delete"><h1>x Очистить</h1></div>
+    </div>
+</body>
+</html>

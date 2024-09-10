@@ -1,0 +1,29 @@
+.button{
+    background-color: var(--color-primary);
+    border-radius: var(--border-10);
+    padding: 15px 10px;
+    color: var(--color-text);
+}
+
+.input_field{
+    border: solid;
+    border-color: var(--color-text-ligth-gray);
+    border-radius: var(--border-10);
+    background-color: var(--color-text);
+    color: var(--color-text-ligth-gray);
+    padding: 15px 10px;
+}
+
+.new-task{
+    background-color: var(--color-text);
+    padding: 20px 30px;
+    width: 450px;
+    border-radius: var(--border-10);    
+}
+
+.new-task__buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
